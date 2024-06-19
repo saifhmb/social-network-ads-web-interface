@@ -77,9 +77,9 @@ def main():
     '''
     st.markdown(multi)
     st.header("Model Metrics", divider = "gray")
-    st.metric(label = "Accuracy", value = acc)
-    st.metric(label = "Precision", value = ps)
-    st.metric(label = "Recall", value = rs)
+    st.metric(label = "Accuracy", value = round(acc, 2))
+    st.metric(label = "Precision", value = round(ps, 2))
+    st.metric(label = "Recall", value = round(rs, 2))
 
     st.markdown("To determine whether a customer will make a purchase, please **enter** the Age and Estimated Salary:")
     Age = st.number_input("Age")
