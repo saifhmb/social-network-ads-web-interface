@@ -78,7 +78,6 @@ def main():
     st.markdown(multi)
     st.header("Model Metrics", divider = "gray")
     st.metric(label = "Accuracy", value = acc)
-    st.metric(label = "Accuracy", value = acc)
     st.metric(label = "Precision", value = ps)
     st.metric(label = "Recall", value = rs)
 
