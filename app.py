@@ -84,7 +84,7 @@ def main():
 
     st.markdown("To determine whether a customer will make a purchase, please **enter** the Age and Estimated Salary:")
     Age = st.number_input("Age")
-    EstimatedSalary = st.number_input("Estimated Salary", "Type Here")
+    EstimatedSalary = st.number_input("Estimated Salary")
     result = ""
     if st.button("Predict"):
         result = prediction(Age, EstimatedSalary)
