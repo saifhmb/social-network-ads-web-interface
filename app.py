@@ -70,9 +70,21 @@ def prediction(Age, EstimatedSalary):
 def main(): 
       # giving the webpage a title 
     st.title("Customer Purchase Prediction ML App") 
-    
-    Age = st.text_input("Age", "Type Here")
-    EstimatedSalary = st.text_input("EstimatedSalary", "Type Here")
+    st.header("Model Description", divider = "gray")
+    multi = '''This is a logistic regression classifier trained on social network ads dataset to predict customer purchasing behavior
+    based on their Age and Estimated Salary.
+    For more details on the model please refer to the model card at https://huggingface.co/saifhmb/social-network-ads-logit-model
+    '''
+    st.markdown(multi)
+    st.header("Model Metrics", divider = "gray")
+    st.metrics(label = "Accuracy", value = acc)
+    st.metrics(label = "Accuracy", value = acc)
+    st.metrics(label = "Precision", value = ps)
+    st.metrics(label = "Recall", value = rs)
+
+    st.markdown("To determine whether a customer will make a purchase, please **enter** the Age and Estimated Salary:")
+    Age = st.number_input("Age")
+    EstimatedSalary = st.number_input("Estimated Salary", "Type Here")
     result = ""
     if st.button("Predict"):
         result = prediction(Age, EstimatedSalary)
