@@ -69,15 +69,19 @@ def prediction(Age, EstimatedSalary):
 # this is the main function in which we define our webpage  
 def main(): 
       # giving the webpage a title 
-    st.title("Customer Vehicle Purchase Prediction") 
+    st.title("Customer Purchase Prediction") 
     
     Age = st.text_input("Age", "Type Here")
     EstimatedSalary = st.text_input("EstimatedSalary", "Type Here")
     result = ""
     if st.button("Predict"):
         result = prediction(Age, EstimatedSalary)
-        
-    st.success('The output is {}'.format(result))
+        if result == 0:
+            st.success('The output is {}'.format(result) "and thus the customer is NOT likely to complete a purchase")
+        if result == 1:
+            st.success('The output is {}'.format(result) "and thus the customer is likely to complete a purchase")
+
+
         
 if __name__=='__main__': 
     main() 
