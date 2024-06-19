@@ -62,7 +62,7 @@ def welcome():
 
 # defining the function which will make the prediction using the data which the user inputs 
 def prediction(Age, EstimatedSalary):
-    prediction = model.predict.sc.transform([[Age, EstimatedSalary]])
+    prediction = model.predict(sc.transform([[Age, EstimatedSalary]]))
     print(prediction)
     return prediction
 
