@@ -1,10 +1,4 @@
 # importing libraries
-!pip install huggingface_hub
-!pip install transformers
-!pip install transformers[torch]
-!pip install datasets
-!pip install skops
-!pip install streamlit
 from datasets import load_dataset, load_dataset_builder
 import numpy as np
 import matplotlib.pyplot as plt
