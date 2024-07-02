@@ -10,6 +10,7 @@ pinned: false
 ---
 # social-network-ads-web-interface
 Hugging Face ML Deployment of Streamlit App for a Customer Purchase Prediction Model (Purchased - 1 or no Purchase - 0)
+https://huggingface.co/spaces/saifhmb/Social-Network-Ads-Web-Interface
 
 # Model description
 
