@@ -127,6 +127,6 @@ model_card = Card(model, metadata=metadata_from_config(Path(local_repo)))
 #hub_utils.push(
 #  repo_id=repo_id,
 #    source=local_repo,
-#    token="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",
+#    token="",
 #   commit_message="pushing files to the repo from the example!",
 #    create_remote=True,)
