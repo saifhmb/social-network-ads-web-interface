@@ -27,5 +27,11 @@ The preprocesing steps include using a train/test split ratio of 80/20 and apply
 | accuracy  | 0.925    |
 | precision | 0.944444 |
 | recall    | 0.772727 |
+
+### Feature Importance
+SHAP was used to determine the important features that helps the model make decisions
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6662300a0ad8c45a1ce59190/ZoG4Wai4QeEBoBdwKsclW.png)
+
 ### Confusion Matrix
 ![image](https://github.com/saifhmb/social-network-ads-web-interface/assets/111028776/1a4dc2f5-b2c5-4c52-a9d2-7a305922d66b)
