@@ -1,18 +1,6 @@
----
-title: Social Network Ads Web Interface
-emoji: 🏆
-colorFrom: indigo
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.35.0
-app_file: app.py
-pinned: false
----
-# social-network-ads-web-interface
-Hugging Face ML Deployment of Streamlit App for a Customer Purchase Prediction Model (Purchased - 1 or no Purchase - 0)
-https://huggingface.co/spaces/saifhmb/Social-Network-Ads-Web-Interface
 
-# Model description
+
+# Model Description
 
 This is a logistic regression classifier trained on social network ads dataset (https://huggingface.co/datasets/saifhmb/social-network-ads).
 ## Training Procedure
